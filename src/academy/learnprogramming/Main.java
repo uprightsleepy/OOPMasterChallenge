@@ -34,10 +34,15 @@ public class Main {
 
         Burger burger = new Burger("Basic", "Sausage", 3.56, "White");
         double price = burger.addPrice();
+
         burger.addBurgerAddition1("tomato", 0.27);
         burger.addBurgerAddition2("Lettuce", 0.75);
         burger.addBurgerAddition3("Cheese", 1.15);
-
         System.out.println("Total price for the burger is: $" + burger.addPrice());
+
+        HealthyBurger healthyBurger = new HealthyBurger("Beyond", 5.67);
+        healthyBurger.addHealthAddition1("Egg", 5.43);
+        healthyBurger.addBurgerAddition2("Lentils", 1.00);
+        System.out.println("Total price for the healthy burger is: $" + healthyBurger.addPrice());
     }
 }
