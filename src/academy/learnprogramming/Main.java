@@ -44,5 +44,8 @@ public class Main {
         healthyBurger.addHealthAddition1("Egg", 5.43);
         healthyBurger.addBurgerAddition2("Lentils", 1.00);
         System.out.println("Total price for the healthy burger is: $" + healthyBurger.addPrice());
+
+        DeluxeBurger db = new DeluxeBurger();
+        db.addPrice();
     }
 }
